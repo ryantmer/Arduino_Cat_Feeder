@@ -37,7 +37,6 @@ void flash_led() {
 }
 
 void loop() {
-  Serial.println("Milliseconds " + milliseconds);
   Serial.println("Dispense Count " + dispenseCount);
   
   if (millis() >= DISPENSE_INTERVAL * dispenseCount) {
