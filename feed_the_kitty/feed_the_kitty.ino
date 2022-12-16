@@ -1,9 +1,9 @@
 unsigned int LED_PIN = 2;
 unsigned int MOTOR_PIN = 8;
-unsigned long DISPENSE_INTERVAL = 12UL * 60 * 60 * 1000; // Dispense every 1h.
-int MOTOR_RUNTIME = 4 * 1000; // Run dispensing motor for 4 seconds each time.
-int DELAY = 30 * 1000; // Run loop (and thus flash LED) every 30 seconds.
-int LED_RUNTIME = 200; // Flash LED at 5Hz.
+unsigned long DISPENSE_INTERVAL = 1000UL * 60 * 60 * 12; // Dispense every X hours.
+unsigned long MOTOR_RUNTIME = 1000UL * 3.5; // Run dispensing motor for X seconds per run.
+unsigned int DELAY = 1000U * 60; // Run loop every X seconds.
+unsigned int LED_RUNTIME = 200; // Flash LED at 5Hz.
 
 unsigned int dispenseCount = 0;
 
